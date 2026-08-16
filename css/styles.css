@@ -1605,20 +1605,43 @@ img {
 
 .banquet-floating-badge {
     position: absolute;
-    bottom: 24px;
-    left: 24px;
-    right: 24px;
-    background: rgba(255, 255, 255, 0.95);
+    bottom: 16px;
+    left: 16px;
+    right: auto;
+    max-width: calc(100% - 32px);
+    background: rgba(14, 12, 10, 0.82);
     backdrop-filter: blur(12px);
-    padding: 18px 26px;
-    border-radius: var(--radius-md);
-    display: flex;
+    -webkit-backdrop-filter: blur(12px);
+    color: #FDFBF7;
+    padding: 8px 16px;
+    border-radius: var(--radius-full);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    display: inline-flex;
     align-items: center;
-    gap: 16px;
-    box-shadow: var(--shadow-md);
+    gap: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    z-index: 5;
+    pointer-events: none;
 }
 
-.banquet-floating-badge i { font-size: 2.2rem; }
+.banquet-floating-badge i { 
+    font-size: 1.15rem; 
+    color: var(--color-gold);
+}
+
+.banquet-floating-badge strong {
+    font-size: 0.84rem;
+    font-weight: 700;
+    color: var(--color-gold-light);
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.banquet-floating-badge span {
+    font-size: 0.74rem;
+    color: rgba(253, 251, 247, 0.8);
+    display: inline-block;
+}
 
 .banquet-amenities {
     list-style: none;
@@ -1737,30 +1760,39 @@ img {
 
 .story-floating-badge {
     position: absolute;
-    bottom: -20px;
-    left: -20px;
-    background: rgba(255, 255, 255, 0.96);
+    bottom: 16px;
+    left: 16px;
+    background: rgba(14, 12, 10, 0.82);
     backdrop-filter: blur(12px);
-    padding: 16px 22px;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-lg), 0 0 0 1px rgba(212, 175, 55, 0.3);
-    display: flex;
+    -webkit-backdrop-filter: blur(12px);
+    color: #FDFBF7;
+    padding: 8px 16px;
+    border-radius: var(--radius-full);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    display: inline-flex;
     align-items: center;
-    gap: 14px;
-    z-index: 10;
+    gap: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    z-index: 5;
 }
 
-.badge-icon i { font-size: 2rem; }
-
-.badge-text strong {
-    display: block;
-    font-size: 0.95rem;
-    color: var(--text-primary);
+.story-floating-badge .badge-icon i { 
+    font-size: 1.15rem; 
+    color: var(--color-gold);
 }
 
-.badge-text span {
-    font-size: 0.8rem;
-    color: var(--text-muted);
+.story-floating-badge .badge-text strong {
+    font-size: 0.84rem;
+    font-weight: 700;
+    color: var(--color-gold-light);
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.story-floating-badge .badge-text span {
+    font-size: 0.74rem;
+    color: rgba(253, 251, 247, 0.8);
+    display: inline-block;
 }
 
 /* VISUAL TOUR PHOTO GALLERY SECTION */
