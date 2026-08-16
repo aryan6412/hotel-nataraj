@@ -2359,23 +2359,32 @@ img {
 
     .cursor-dot, .cursor-ring { display: none !important; }
 
-    /* Announcement Bar on Mobile */
+    /* Announcement Bar on Mobile: Strict Single Line */
     .announcement-bar {
-        font-size: 0.74rem;
-        padding: 6px 12px;
+        font-size: 0.72rem;
+        padding: 6px 8px;
         text-align: center;
+        white-space: nowrap !important;
+        overflow: hidden;
     }
 
     .announcement-content {
         justify-content: center;
         text-align: center;
+        white-space: nowrap !important;
+    }
+
+    .announcement-badge {
+        white-space: nowrap !important;
+        display: inline-block;
+        font-size: 0.72rem;
     }
 
     .announcement-right { display: none !important; }
 
     /* Header on Mobile: Clean Logo + Hamburger Only */
     .site-header {
-        top: 30px;
+        top: 28px;
     }
 
     .site-header.scrolled {
@@ -2626,6 +2635,7 @@ img {
 }
 
 @media (max-width: 400px) {
+    .announcement-bar, .announcement-badge { font-size: 0.65rem !important; }
     .brand-name { font-size: 1.08rem; }
     .hero-title-compact { font-size: 1.75rem; }
     .hero-buttons-compact .btn { padding: 9px 12px; font-size: 0.78rem; }

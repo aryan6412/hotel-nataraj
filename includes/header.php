@@ -31,7 +31,7 @@
     <!-- Sticky Announcement Bar -->
     <div class="announcement-bar">
         <div class="container announcement-content">
-            <span class="announcement-badge"><i class="fa-solid fa-crown text-gold"></i> Welcome to Hotel Nataraj — Experiential Fine Dining & Celebrations</span>
+            <span class="announcement-badge"><i class="fa-solid fa-crown text-gold"></i> Welcome to Hotel Nataraj — Fine Dining & Celebrations</span>
             <div class="announcement-right">
                 <a href="tel:9898989898" class="phone-link pulse-hover"><i class="fa-solid fa-phone"></i> Call Hotline: <strong>9898989898</strong></a>
                 <span class="divider">|</span>
