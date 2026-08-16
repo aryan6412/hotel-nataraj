@@ -185,31 +185,7 @@
         </div>
     </div>
 
-    <!-- Mobile Bottom Floating Navigation Bar (Thumb Zone UX) -->
-    <nav class="mobile-bottom-bar" id="mobileBottomBar" aria-label="Mobile Navigation">
-        <a href="index.php" class="mobile-bar-item <?php echo basename($_SERVER['PHP_SELF']) === 'index.php' ? 'active' : ''; ?>">
-            <i class="fa-solid fa-house"></i>
-            <span>Home</span>
-        </a>
-        <a href="menu.php" class="mobile-bar-item <?php echo basename($_SERVER['PHP_SELF']) === 'menu.php' ? 'active' : ''; ?>">
-            <i class="fa-solid fa-utensils"></i>
-            <span>Menu</span>
-        </a>
-        <button class="mobile-bar-item mobile-bar-cta" id="mobileBarReserveBtn">
-            <div class="cta-inner">
-                <i class="fa-solid fa-calendar-check"></i>
-            </div>
-            <span>Book Table</span>
-        </button>
-        <a href="tel:9898989898" class="mobile-bar-item">
-            <i class="fa-solid fa-phone"></i>
-            <span>Call</span>
-        </a>
-        <a href="contact.php" class="mobile-bar-item <?php echo basename($_SERVER['PHP_SELF']) === 'contact.php' ? 'active' : ''; ?>">
-            <i class="fa-solid fa-location-dot"></i>
-            <span>Location</span>
-        </a>
-    </nav>
+
 
     <!-- Custom JS -->
     <script src="js/app.js"></script>
