@@ -167,12 +167,9 @@ if (empty($featuredItems)) {
     <div class="container banquet-grid">
         <div class="banquet-image-card tilt-card gsap-left-reveal">
             <img src="assets/images/banquet_hall.jpg" alt="Hotel Nataraj Grand Banquet Hall" class="img-responsive open-lightbox-img" data-caption="Hotel Nataraj Grand Banquet Hall - Wedding & Party Venue">
-            <div class="banquet-floating-badge float-badge">
-                <i class="fa-solid fa-award text-gold"></i>
-                <div>
-                    <strong>Best Event Venue</strong>
-                    <span>Air-Conditioned • Audio-Visual Setup</span>
-                </div>
+            <div class="banquet-floating-badge">
+                <i class="fa-solid fa-crown text-gold"></i>
+                <span>Grand Banquet • 300+ Guests</span>
             </div>
         </div>
         <div class="banquet-info gsap-right-reveal">
@@ -231,12 +228,9 @@ if (empty($featuredItems)) {
                     <div class="story-img-wrapper tilt-card">
                         <img src="assets/images/chef_story.jpg" alt="Master Chef at Hotel Nataraj" class="img-responsive rounded-card open-lightbox-img" data-caption="Master Chef garnishing authentic Indian delicacy">
                         
-                        <div class="story-floating-badge float-badge">
-                            <div class="badge-icon"><i class="fa-solid fa-award text-gold"></i></div>
-                            <div class="badge-text">
-                                <strong>Master Chef Craftsmanship</strong>
-                                <span>Pure Desi Ghee & Clay Tandoor</span>
-                            </div>
+                        <div class="story-floating-badge">
+                            <i class="fa-solid fa-award text-gold"></i>
+                            <span>Master Chef Legacy</span>
                         </div>
                     </div>
                 </div>
