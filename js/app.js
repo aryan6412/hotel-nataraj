@@ -362,7 +362,7 @@ function initModals() {
     const reserveModal = document.getElementById('reserveModal');
     const closeReserveModal = document.getElementById('closeReserveModal');
     const reserveTriggers = [
-        'openReserveModal', 'mobileReserveBtn', 'heroReserveBtn',
+        'openReserveModal', 'mobileReserveBtn', 'heroReserveBtn', 'mobileBarReserveBtn',
         'bookBanquetBtn', 'ctaReserveBtn', 'menuReserveBtn', 'aboutReserveBtn'
     ];
 

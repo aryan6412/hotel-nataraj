@@ -2489,29 +2489,17 @@ img {
         font-size: 0.78rem;
     }
 
-    /* Mobile Floating Hotline Widget: Sleek Circular Fab */
+    /* Mobile Bottom Floating Navigation Bar & Floating Hotline Hide */
+    .mobile-bottom-bar {
+        display: flex !important;
+    }
+
+    body {
+        padding-bottom: 74px !important;
+    }
+
     .floating-hotline-widget {
-        bottom: 20px;
-        right: 20px;
-    }
-
-    .hotline-pill {
-        padding: 0;
-        width: 52px;
-        height: 52px;
-        border-radius: 50%;
-        justify-content: center;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 0 2px rgba(212, 175, 55, 0.6);
-    }
-
-    .hotline-text {
         display: none !important;
-    }
-
-    .hotline-icon {
-        width: 100%;
-        height: 100%;
-        font-size: 1.25rem;
     }
 
     /* Modal Responsiveness */
@@ -2556,4 +2544,88 @@ img {
     .hero-title-compact { font-size: 1.75rem; }
     .hero-buttons-compact .btn { padding: 9px 12px; font-size: 0.78rem; }
     .scene-pill { padding: 4px 8px; font-size: 0.7rem; }
+}
+
+/* ==========================================================================
+   Mobile Bottom Bar Design (Thumb Zone UX - UI-UX Pro Max)
+   ========================================================================== */
+.mobile-bottom-bar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    background: rgba(14, 12, 10, 0.96);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(212, 175, 55, 0.3);
+    z-index: 2800;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 6px;
+    box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.6);
+}
+
+.mobile-bar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    color: rgba(253, 251, 247, 0.7);
+    text-decoration: none;
+    font-size: 0.7rem;
+    font-weight: 500;
+    background: none;
+    border: none;
+    cursor: pointer;
+    min-width: 52px;
+    min-height: 48px;
+    transition: all 0.2s ease;
+}
+
+.mobile-bar-item i {
+    font-size: 1.12rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.mobile-bar-item.active,
+.mobile-bar-item:hover {
+    color: var(--color-gold-light);
+}
+
+.mobile-bar-item.active i {
+    color: var(--color-gold);
+    transform: translateY(-2px);
+}
+
+.mobile-bar-cta {
+    position: relative;
+    top: -12px;
+}
+
+.mobile-bar-cta .cta-inner {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #D4AF37 0%, #B89324 100%);
+    color: #14110E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 18px rgba(212, 175, 55, 0.5);
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+    transition: transform 0.2s ease;
+}
+
+.mobile-bar-cta:active .cta-inner {
+    transform: scale(0.92);
+}
+
+.mobile-bar-cta span {
+    font-weight: 700;
+    color: var(--color-gold-light);
+    font-size: 0.68rem;
 }
