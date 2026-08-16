@@ -180,10 +180,22 @@ if (empty($featuredItems)) {
             </p>
 
             <ul class="banquet-amenities">
-                <li class="amenity-item"><i class="fa-solid fa-circle-check text-gold"></i> <strong>Seating Capacity:</strong> Up to 300+ Guests comfortably</li>
-                <li class="amenity-item"><i class="fa-solid fa-circle-check text-gold"></i> <strong>Custom Buffet Catering:</strong> Pure Veg & Multi-Cuisine options</li>
-                <li class="amenity-item"><i class="fa-solid fa-circle-check text-gold"></i> <strong>Modern Amenities:</strong> Central Air Conditioning, DJ Stage & Lighting</li>
-                <li class="amenity-item"><i class="fa-solid fa-circle-check text-gold"></i> <strong>Dedicated Event Coordinator:</strong> Seamless planning & management</li>
+                <li class="amenity-item">
+                    <i class="fa-solid fa-circle-check text-gold"></i>
+                    <div class="amenity-text"><strong>Seating Capacity:</strong> Up to 300+ Guests comfortably</div>
+                </li>
+                <li class="amenity-item">
+                    <i class="fa-solid fa-circle-check text-gold"></i>
+                    <div class="amenity-text"><strong>Custom Buffet Catering:</strong> Pure Veg & Multi-Cuisine options</div>
+                </li>
+                <li class="amenity-item">
+                    <i class="fa-solid fa-circle-check text-gold"></i>
+                    <div class="amenity-text"><strong>Modern Amenities:</strong> Central Air Conditioning, DJ Stage & Lighting</div>
+                </li>
+                <li class="amenity-item">
+                    <i class="fa-solid fa-circle-check text-gold"></i>
+                    <div class="amenity-text"><strong>Dedicated Coordinator:</strong> Seamless planning & event management</div>
+                </li>
             </ul>
 
             <div class="banquet-actions mt-4">

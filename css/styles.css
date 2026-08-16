@@ -1639,14 +1639,34 @@ img {
     display: flex;
     flex-direction: column;
     gap: 14px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .banquet-amenities li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
-    font-size: 1.05rem;
+    font-size: 0.98rem;
+    line-height: 1.5;
+}
+
+.banquet-amenities li i {
+    font-size: 1.15rem;
+    color: var(--color-gold);
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.amenity-text {
+    flex: 1;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+
+.amenity-text strong {
+    color: var(--text-primary);
+    font-weight: 700;
+    margin-right: 4px;
 }
 
 .banquet-actions {
