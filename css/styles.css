@@ -1103,7 +1103,7 @@ img {
 .highlights-bar {
     background: var(--color-dark);
     color: #FFFFFF;
-    padding: 50px 0;
+    padding: 24px 0;
     position: relative;
     z-index: 3;
 }
@@ -2499,6 +2499,14 @@ img {
     .dishes-grid, .menu-items-grid, .gallery-grid, .testimonials-grid { 
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+
+    .highlights-bar {
+        padding: 14px 0 !important;
+    }
+
+    .highlights-bar .container {
+        padding: 0 8px !important;
     }
 
     .highlights-grid {
