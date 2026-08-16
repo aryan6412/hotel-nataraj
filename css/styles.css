@@ -2304,7 +2304,9 @@ img {
     align-items: center;
 }
 
-/* Media Queries & Desktop Mobile Drawer Guard */
+/* ==========================================================================
+   Comprehensive Mobile & Responsive Fixes
+   ========================================================================== */
 @media (min-width: 769px) {
     .mobile-drawer {
         display: none !important;
@@ -2312,27 +2314,246 @@ img {
 }
 
 @media (max-width: 1024px) {
-    .hero-title { font-size: 3rem; }
+    .hero-title, .hero-title-compact { font-size: 2.8rem; }
     .highlights-grid { grid-template-columns: repeat(2, 1fr); }
     .banquet-grid, .story-grid, .about-detail-grid, .contact-grid { grid-template-columns: 1fr; }
     .standards-grid { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: 1fr 1fr; }
     .rotating-seal { display: none; }
-    .story-card-wrapper, .gallery-card-wrapper, .testimonial-card-wrapper, .cta-card-wrapper, .menu-card-wrapper, .about-card-wrapper, .standards-card-wrapper, .contact-card-wrapper, .map-card-wrapper { padding: 36px; }
+    .story-card-wrapper, .gallery-card-wrapper, .testimonial-card-wrapper, .cta-card-wrapper, .menu-card-wrapper, .about-card-wrapper, .standards-card-wrapper, .contact-card-wrapper, .map-card-wrapper { padding: 32px; }
     .cta-flex { flex-direction: column; text-align: center; }
 }
 
 @media (max-width: 768px) {
-    .cursor-dot, .cursor-ring { display: none; }
-    .announcement-right { display: none; }
-    .main-nav, .call-btn { display: none; }
-    .mobile-toggle { display: flex; }
-    .mobile-drawer { display: block; }
-    .hero-title { font-size: 2.3rem; }
-    .hero-trust-bar { flex-direction: column; width: 100%; border-radius: var(--radius-md); }
-    .trust-divider { display: none; }
-    .dishes-grid, .menu-items-grid, .gallery-grid, .testimonials-grid { grid-template-columns: 1fr; }
-    .floating-hotline-widget { bottom: 20px; right: 20px; }
-    .story-floating-badge { position: relative; bottom: 0; left: 0; margin-top: 20px; }
-    .form-row { grid-template-columns: 1fr; }
+    /* Global Container Overflow Guard */
+    html, body {
+        overflow-x: hidden !important;
+        max-width: 100vw !important;
+        width: 100% !important;
+    }
+
+    .container {
+        padding: 0 16px !important;
+        max-width: 100% !important;
+    }
+
+    .cursor-dot, .cursor-ring { display: none !important; }
+
+    /* Announcement Bar on Mobile */
+    .announcement-bar {
+        font-size: 0.74rem;
+        padding: 6px 12px;
+        text-align: center;
+    }
+
+    .announcement-content {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .announcement-right { display: none !important; }
+
+    /* Header on Mobile: Clean Logo + Hamburger Only */
+    .site-header {
+        top: 30px;
+    }
+
+    .site-header.scrolled {
+        top: 0;
+    }
+
+    .header-container {
+        height: 68px;
+        padding: 0 16px;
+    }
+
+    .brand-logo {
+        gap: 10px;
+    }
+
+    .logo-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 1.05rem;
+    }
+
+    .brand-name {
+        font-size: 1.22rem;
+    }
+
+    .brand-sub {
+        font-size: 0.54rem;
+        letter-spacing: 1px;
+    }
+
+    .main-nav { display: none !important; }
+
+    /* Hide bulky desktop header buttons on mobile */
+    .header-actions .call-btn,
+    .header-actions .reserve-btn {
+        display: none !important;
+    }
+
+    .mobile-toggle {
+        display: flex !important;
+        padding: 8px;
+    }
+
+    .mobile-drawer {
+        display: block;
+        width: 290px;
+    }
+
+    /* Hero Section on Mobile */
+    .hero-section.hero-cinematic-section {
+        min-height: 100svh;
+        padding: 125px 16px 40px 16px;
+        justify-content: center;
+    }
+
+    .hero-compact-container {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .hero-mini-badge {
+        font-size: 0.68rem;
+        padding: 4px 12px;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+
+    .hero-title-compact {
+        font-size: 2.05rem;
+        line-height: 1.18;
+        letter-spacing: -0.5px;
+        margin-bottom: 10px;
+    }
+
+    .hero-tagline {
+        font-size: 0.86rem;
+        line-height: 1.45;
+        margin-bottom: 20px;
+        padding: 0 6px;
+    }
+
+    .hero-buttons-compact {
+        gap: 8px;
+        margin-bottom: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-buttons-compact .btn {
+        padding: 10px 15px;
+        font-size: 0.84rem;
+        gap: 6px;
+    }
+
+    .hero-scene-bar {
+        padding: 4px 8px;
+        max-width: 100%;
+        border-radius: var(--radius-full);
+    }
+
+    .scene-buttons-group {
+        gap: 4px;
+    }
+
+    .scene-pill {
+        padding: 5px 11px;
+        font-size: 0.74rem;
+        gap: 4px;
+    }
+
+    /* Grids & Cards on Mobile */
+    .dishes-grid, .menu-items-grid, .gallery-grid, .testimonials-grid { 
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .highlights-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+
+    .highlight-box {
+        padding: 16px 12px;
+    }
+
+    .highlight-number {
+        font-size: 2.2rem;
+    }
+
+    .highlight-label {
+        font-size: 0.78rem;
+    }
+
+    /* Mobile Floating Hotline Widget: Sleek Circular Fab */
+    .floating-hotline-widget {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .hotline-pill {
+        padding: 0;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        justify-content: center;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 0 2px rgba(212, 175, 55, 0.6);
+    }
+
+    .hotline-text {
+        display: none !important;
+    }
+
+    .hotline-icon {
+        width: 100%;
+        height: 100%;
+        font-size: 1.25rem;
+    }
+
+    /* Modal Responsiveness */
+    .modal-card {
+        padding: 24px 18px;
+        max-width: 94vw;
+        border-radius: var(--radius-md);
+    }
+
+    .dish-modal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dish-modal-img {
+        min-height: 220px;
+        max-height: 240px;
+    }
+
+    .dish-modal-details {
+        padding: 20px;
+    }
+
+    .form-row { 
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom-flex {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .brand-name { font-size: 1.08rem; }
+    .hero-title-compact { font-size: 1.75rem; }
+    .hero-buttons-compact .btn { padding: 9px 12px; font-size: 0.78rem; }
+    .scene-pill { padding: 4px 8px; font-size: 0.7rem; }
 }
