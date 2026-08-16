@@ -1,73 +1,88 @@
-    <!-- Footer Section -->
+    <!-- Footer Section (Luxury Redesign - UI-UX Pro Max) -->
     <footer class="site-footer">
-        <div class="container footer-grid">
-            <div class="footer-col brand-col">
-                <div class="footer-logo">
-                    <i class="fa-solid fa-utensils text-gold"></i>
-                    <span class="brand-name">Hotel Nataraj</span>
+        <div class="container">
+            
+            <!-- Footer Brand & Header -->
+            <div class="footer-brand-hero">
+                <div class="footer-brand-badge">
+                    <i class="fa-solid fa-crown text-gold"></i> HOTEL NATARAJ &bull; EST. 1998
                 </div>
-                <p class="footer-desc">
-                    Experience authentic Indian culinary legacy, slow-cooked royal gravies, clay-oven tandoor delights, and grand banquet celebrations crafted with warmth and elegance.
-                </p>
-                <div class="social-links">
-                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#" aria-label="TripAdvisor"><i class="fa-brands fa-tripadvisor"></i></a>
-                </div>
-            </div>
-
-            <div class="footer-col">
-                <h4 class="footer-title">Quick Links</h4>
-                <ul class="footer-menu">
-                    <li><a href="index.php"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
-                    <li><a href="menu.php"><i class="fa-solid fa-chevron-right"></i> Royal Menu</a></li>
-                    <li><a href="index.php#banquetSection"><i class="fa-solid fa-chevron-right"></i> Banquet Hall</a></li>
-                    <li><a href="about.php"><i class="fa-solid fa-chevron-right"></i> Our Story & Legacy</a></li>
-                    <li><a href="contact.php"><i class="fa-solid fa-chevron-right"></i> Contact & Location</a></li>
-                    <li><a href="admin.php"><i class="fa-solid fa-database text-gold"></i> Database Manager</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4 class="footer-title">Opening Hours</h4>
-                <div class="hours-box">
-                    <p><strong>Lunch Service:</strong><br>11:00 AM – 3:30 PM</p>
-                    <p class="mt-2"><strong>Dinner Service:</strong><br>7:00 PM – 11:30 PM</p>
-                    <p class="mt-2 text-gold"><strong>Open All 7 Days a Week</strong></p>
+                <h3 class="footer-brand-heading">Royal Fine Dining &amp; Grand Banquet</h3>
+                <p class="footer-brand-tagline">Authentic charcoal tandoor, slow-cooked royal gravies, and grand celebratory banquets.</p>
+                
+                <div class="footer-social-row">
+                    <a href="#" class="social-chip" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/9898989898" class="social-chip" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" class="social-chip" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-chip" aria-label="TripAdvisor"><i class="fa-brands fa-tripadvisor"></i></a>
                 </div>
             </div>
 
-            <div class="footer-col contact-col">
-                <h4 class="footer-title">Reach Us</h4>
-                <ul class="contact-info">
-                    <li>
-                        <i class="fa-solid fa-location-dot text-gold"></i>
-                        <span>124 Heritage Royal Road, Near City Center, Main Avenue</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-phone text-gold"></i>
-                        <a href="tel:9898989898"><strong>9898989898</strong></a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-envelope text-gold"></i>
-                        <a href="mailto:info@hotelnataraj.com">info@hotelnataraj.com</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-building-columns text-gold"></i>
-                        <span>Banquet Hall Bookings: <strong>9898989898</strong></span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <div class="container footer-bottom-flex">
-                <p>&copy; <?php echo date('Y'); ?> Hotel Nataraj. All Rights Reserved. Crafted with Culinary Excellence.</p>
-                <div class="footer-tags">
-                    <span>Authentic Flavor</span> • <span>Pure Ghee</span> • <span>Grand Celebrations</span>
+            <!-- Footer Modular Cards Grid -->
+            <div class="footer-cards-grid">
+                
+                <!-- Card 1: Navigation Chips -->
+                <div class="footer-card">
+                    <h4 class="footer-card-title"><i class="fa-solid fa-compass text-gold"></i> Explore</h4>
+                    <div class="footer-nav-chips">
+                        <a href="index.php" class="nav-chip"><i class="fa-solid fa-house"></i> Home</a>
+                        <a href="menu.php" class="nav-chip"><i class="fa-solid fa-utensils"></i> Royal Menu</a>
+                        <a href="index.php#banquetSection" class="nav-chip"><i class="fa-solid fa-building-columns"></i> Banquet Hall</a>
+                        <a href="about.php" class="nav-chip"><i class="fa-solid fa-circle-info"></i> Our Legacy</a>
+                        <a href="contact.php" class="nav-chip"><i class="fa-solid fa-envelope"></i> Contact</a>
+                        <a href="admin.php" class="nav-chip nav-chip-gold"><i class="fa-solid fa-database"></i> DB Manager</a>
+                    </div>
                 </div>
+
+                <!-- Card 2: Operating Hours -->
+                <div class="footer-card">
+                    <h4 class="footer-card-title"><i class="fa-solid fa-clock text-gold"></i> Service Hours</h4>
+                    <div class="hours-compact-list">
+                        <div class="hours-row">
+                            <span class="hours-title">Lunch Service:</span>
+                            <span class="hours-time">11:00 AM &ndash; 3:30 PM</span>
+                        </div>
+                        <div class="hours-row">
+                            <span class="hours-title">Dinner Service:</span>
+                            <span class="hours-time">7:00 PM &ndash; 11:30 PM</span>
+                        </div>
+                        <div class="hours-badge">
+                            <i class="fa-solid fa-circle-check text-gold"></i> Open All 7 Days &bull; Valet Parking
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Reach & Reservations -->
+                <div class="footer-card">
+                    <h4 class="footer-card-title"><i class="fa-solid fa-phone-volume text-gold"></i> Direct Contact</h4>
+                    <div class="footer-contact-compact">
+                        <a href="tel:9898989898" class="contact-cta-chip">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <small>Call Hotline / Booking</small>
+                                <strong>9898989898</strong>
+                            </div>
+                        </a>
+                        <div class="contact-address-text">
+                            <i class="fa-solid fa-location-dot text-gold"></i>
+                            <span>124 Heritage Royal Road, Near City Center</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
+            <!-- Footer Bottom Bar -->
+            <div class="footer-bottom-bar">
+                <p class="copyright-text">&copy; <?php echo date('Y'); ?> Hotel Nataraj. All Rights Reserved.</p>
+                <div class="footer-quality-tags">
+                    <span>100% Pure Ghee</span> &bull; <span>Clay Tandoor</span> &bull; <span>Opulent Banquets</span>
+                </div>
+                <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to Top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+                    <i class="fa-solid fa-arrow-up"></i> Top
+                </button>
+            </div>
+
         </div>
     </footer>
 
