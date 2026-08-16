@@ -2654,20 +2654,100 @@ img {
         padding: 20px;
     }
 
-    .form-row { 
-        grid-template-columns: 1fr;
-        gap: 12px;
+    /* Mobile Optimized Footer */
+    .site-footer {
+        padding-top: 48px !important;
+        padding-bottom: 20px !important;
+        text-align: center;
     }
 
     .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
+        grid-template-columns: 1fr !important;
+        gap: 28px !important;
+        padding-bottom: 36px !important;
+    }
+
+    .footer-col.brand-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .footer-desc {
+        font-size: 0.88rem;
+        margin: 12px auto 18px auto;
+        max-width: 320px;
+        line-height: 1.5;
+    }
+
+    .social-links {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .footer-title {
+        font-size: 1.15rem;
+        margin-bottom: 14px;
+    }
+
+    .footer-menu {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 10px 14px !important;
+        text-align: left;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .footer-menu a {
+        font-size: 0.86rem;
+        padding: 6px 0;
+    }
+
+    .hours-box {
+        background: rgba(255, 255, 255, 0.04);
+        padding: 16px 20px;
+        border-radius: var(--radius-sm);
+        border: 1px solid rgba(212, 175, 55, 0.2);
+        max-width: 320px;
+        margin: 0 auto;
+        font-size: 0.88rem;
+    }
+
+    .contact-info {
+        max-width: 320px;
+        margin: 0 auto;
+        text-align: left;
+        gap: 12px;
+    }
+
+    .contact-info li {
+        font-size: 0.88rem;
+        line-height: 1.45;
+    }
+
+    .footer-bottom {
+        padding: 18px 0;
+        font-size: 0.82rem;
     }
 
     .footer-bottom-flex {
         flex-direction: column;
-        gap: 12px;
+        gap: 8px;
         text-align: center;
+    }
+
+    .footer-tags {
+        font-size: 0.76rem;
+        opacity: 0.75;
     }
 }
 
