@@ -99,13 +99,9 @@
         </nav>
     </div>
 
-    <!-- Floating Hotline Sticky Widget -->
+    <!-- Floating Hotline Sticky Widget (Icon Only) -->
     <div class="floating-hotline-widget" id="floatingHotline">
-        <a href="tel:9898989898" class="hotline-pill">
+        <a href="tel:9898989898" class="hotline-pill" title="Call Hotel Nataraj: 9898989898" aria-label="Call Hotline">
             <div class="hotline-icon"><i class="fa-solid fa-phone"></i></div>
-            <div class="hotline-text">
-                <span class="hotline-label">Quick Order / Booking</span>
-                <span class="hotline-number">9898989898</span>
-            </div>
         </a>
     </div>
